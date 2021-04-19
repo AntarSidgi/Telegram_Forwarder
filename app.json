@@ -1,0 +1,59 @@
+{
+  "name": "Telegram Forwarder Bot",
+  "description": "بوت تلغرام لإعادة توجيه الرسائل تلقائيًا",
+  "keywords": [
+    "telegram",
+    "bot",
+    "forwarder",
+    "تلغرام",
+    "بوت",
+    "توجيه",
+  ],
+  "repository": "https://github.com/AntarSidgi/Telegram_Forwarder",
+  "env": {
+    "ENV": {
+      "description": "تعيين هذا على ANYTHING سيمكن المتغيرات env.",
+      "value": "ANYTHING"
+    },
+    "API_KEY": {
+      "description": "توكن البوت الخاص بك يمكنك الحصول عليه من @BotFather.",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "الايدي الخاص بك.",
+      "value": "323823995"
+    },
+    "FROM_CHATS": {
+      "description": "قائمة معرفات الدردشة لإعادة توجيه الرسائل منها.",
+      "required": false
+    },
+    "TO_CHATS": {
+      "description": "قائمة معرفات الدردشة لإعادة توجيه الرسائل إليها",
+      "required": false
+    },
+    "WEBHOOK": {
+      "description": "سيؤدي تعيين هذا على `ANYTHING` إلى تمكين الويبهوك عندما تكون في رسائل وضع env.",
+      "required": false
+    },
+    "IP_ADDRESS": {
+      "description": "اتركه 0.0.0.0 إذا كنت تستخدم Heroku.",
+      "value": "0.0.0.0"
+    },
+    "URL": {
+      "description": "عنوان URL الذي يجب أن يتصل به الويبهوك  (مطلوب فقط في وضع الويبهوك).",
+      "value": "None"
+    },
+    "PORT": {
+      "description": "منفذ لاستخدامه للويبهوك الخاصة بك.",
+      "value": "5000"
+    },
+    "CERT_PATH": {
+      "description": "المسار إلى شهادة الويبهوك (اتركها فارغة اذا كنت لاتعلم).",
+      "required": false
+    },
+    "WORKERS": {
+      "description": "عدد الخيوط المراد استخدامها. 4 هو المبلغ الموصى به (والافتراضي) ، ولكن تجربتك قد تختلف.",
+      "value": "4"
+    }
+  }
+} 
